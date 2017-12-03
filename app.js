@@ -7,8 +7,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, resp){
-   const data = {welcomePhrase: 'Hello, World from Express and EJS!'}
-   resp.render('index', data)
+   const data = 'Hello, World from Express and EJS!'
+   resp.render('index', {"welcomePhrase": data})
 
 })
 
