@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 
 app.get('/', function(req, resp){
    const data = {welcomePhrase: 'Hello, World from Express and EJS!'}
-  resp.render('index', data)
+   resp.render('index', data)
 
 })
 
